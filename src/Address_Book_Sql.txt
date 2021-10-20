@@ -12,3 +12,7 @@ describe addressbook;
 # "UC3 - INSERT NEW CONTACTS TO ADDRESSBOOK"
 insert into addressbook(FIRST_NAME,LAST_NAME,ADDRESS,CITY,STATE,ZIP_CODE,PHONE_NUMBER,EMAIL)values('PREM','PATIL','NASHIK','NASHIK','MAHARASHTRA',422101,7387557696,'prem@gmail.com'),('KALPESH','PATIL','MUMBAI','MUMBAI','MAHARASHTRA',422105,8208087289,'kalpesh@gmail.com');
 select * from addressbook;
+
+# "UC4 - EDIT EXISTING CONTACT PERSON USING NAME"
+update addressbook set ZIP_CODE = 422102 where FIRST_NAME = 'KALPESH';
+select * from addressbook;
