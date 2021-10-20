@@ -16,3 +16,7 @@ select * from addressbook;
 # "UC4 - EDIT EXISTING CONTACT PERSON USING NAME"
 update addressbook set ZIP_CODE = 422102 where FIRST_NAME = 'KALPESH';
 select * from addressbook;
+
+# "UC5 - DELETE PERSON USING PERSON NAME"
+delete from addressbook where FIRST_NAME = 'KALPESH';
+select * from addressbook;
