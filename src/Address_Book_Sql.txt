@@ -20,3 +20,10 @@ select * from addressbook;
 # "UC5 - DELETE PERSON USING PERSON NAME"
 delete from addressbook where FIRST_NAME = 'KALPESH';
 select * from addressbook;
+
+# "UC6 - RETRIEVE PERSON BELONGING TO CITY OR STATE"
+insert into addressbook(FIRST_NAME,LAST_NAME,ADDRESS,CITY,STATE,ZIP_CODE,PHONE_NUMBER,EMAIL)values('KALPESH','PATIL','MUMBAI','MUMBAI','MAHARASHTRA',422105,8208087289,'kalpesh@gmail.com');
+select * from addressbook;
+select FIRST_NAME from addressbook where CITY = 'MUMBAI';
+select FIRST_NAME from addressbook where CITY = 'NASHIK';
+select FIRST_NAME from addressbook where STATE = 'MAHARASHTRA';
