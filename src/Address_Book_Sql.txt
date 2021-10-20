@@ -27,3 +27,8 @@ select * from addressbook;
 select FIRST_NAME from addressbook where CITY = 'MUMBAI';
 select FIRST_NAME from addressbook where CITY = 'NASHIK';
 select FIRST_NAME from addressbook where STATE = 'MAHARASHTRA';
+
+# "UC7 - UNDERSTAND THE SIZE OF ADDRESSBOOK BY CITY OR STATE"
+select count(FIRST_NAME) from addressbook where CITY = 'NASHIK';
+select count(FIRST_NAME) from addressbook where CITY = 'MUMBAI';
+select count(FIRST_NAME) from addressbook where STATE = 'MAHARASHTRA';
