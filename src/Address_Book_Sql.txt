@@ -42,3 +42,7 @@ update addressbook set TYPE = 'FAMILY' where FIRST_NAME = 'PREM';
 update addressbook set TYPE = 'FRIEND' where FIRST_NAME = 'KALPESH';
 select FIRST_NAME from addressbook where TYPE = 'FAMILY';
 select FIRST_NAME from addressbook where TYPE = 'FRIEND';
+
+# "UC10 - GET PHONE NUMBER OF PERSON USING TYPE"
+select FIRST_NAME,PHONE_NUMBER from addressbook where TYPE = 'FRIEND';
+select FIRST_NAME,PHONE_NUMBER from addressbook where TYPE = 'FAMILY';
