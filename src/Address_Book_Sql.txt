@@ -35,3 +35,10 @@ select count(FIRST_NAME) from addressbook where STATE = 'MAHARASHTRA';
 
 # "UC8 - SORT ENTRIES ALPHABETICALLY USING PERSON NAME FOR GIVEN CITY"
 select FIRST_NAME from addressbook order by CITY ;
+
+# "UC9 - IDENTIFY ADDRESSBOOK WITH NAME AND TYPE"
+alter table addressbook add TYPE varchar(50) NOT NULL after EMAIL;
+update addressbook set TYPE = 'FAMILY' where FIRST_NAME = 'PREM';
+update addressbook set TYPE = 'FRIEND' where FIRST_NAME = 'KALPESH';
+select FIRST_NAME from addressbook where TYPE = 'FAMILY';
+select FIRST_NAME from addressbook where TYPE = 'FRIEND';
