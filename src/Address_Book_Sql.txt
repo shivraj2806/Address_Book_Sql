@@ -32,3 +32,6 @@ select FIRST_NAME from addressbook where STATE = 'MAHARASHTRA';
 select count(FIRST_NAME) from addressbook where CITY = 'NASHIK';
 select count(FIRST_NAME) from addressbook where CITY = 'MUMBAI';
 select count(FIRST_NAME) from addressbook where STATE = 'MAHARASHTRA';
+
+# "UC8 - SORT ENTRIES ALPHABETICALLY USING PERSON NAME FOR GIVEN CITY"
+select FIRST_NAME from addressbook order by CITY ;
